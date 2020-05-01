@@ -1,3 +1,4 @@
+/*navbar css*/
 .navbar-light .navbar-nav .nav-link {
     padding: 8px 16px;
     color: #000;
@@ -5,16 +6,87 @@
 
 .nav-link:hover {
     color: #fc0a0a !important;
+    border-bottom: 3px solid #fc0a0a;
 }
 
 .nav-item.active {
     border-left: 3px solid #fc0a0a;
 }
 
-.text-luvina {
+.nav-item.active>.nav-link {
     color: #fc0a0a !important;
 }
 
-#main-nav {
-    box-shadow: 0px 1px 3px #fc0a0a;
+.dropdown-menu {
+    min-width: 3rem;
+    max-width: 5rem;
+}
+
+@media (max-width: 767.98px) {
+    .nav-item {
+        border-bottom: 1px solid #dedede;
+    }
+
+    .nav-link:hover {
+        color: #fc0a0a !important;
+        border-bottom: none;
+    }
+}
+
+
+/*slider*/
+.carousel-img-imperfect {
+    background-image: url("../img/imperfect.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.carousel-img-service {
+    background-image: url("../img/service.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.carousel-img-talent {
+    background-image: url("../img/talent.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#main-slider .carousel-item {
+    height: 28rem;
+    position: relative;
+}
+
+@media (max-width: 767.98px) {
+    .carousel-img-imperfect {
+        background-image: url("../img/imperfect-sm.jpg");
+    }
+}
+
+.dark-layer {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.7);
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+@media (min-width: 768px) {
+    .display-3-md-block {
+        font-size: 4.5rem;
+        font-weight: 300;
+        line-height: 1.2;
+    }
+}
+
+/*center carousel caption*/
+.carousel-caption {
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: initial;
 }

@@ -16,9 +16,9 @@
 
 <body>
     <header>
-        <nav id="main-nav" class="navbar navbar-expand-md navbar-light mb-3">
+        <nav id="main-nav" class="navbar navbar-expand-md navbar-light">
             <div class="container">
-                <a href="" class="navbar-brand align-items-center">
+                <a href="index.html" class="navbar-brand">
                     <img src="img/lvn-logo.png" alt="" height="50" width="170">
                 </a>
                 <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
@@ -26,26 +26,84 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#home">HOME</a>
+                        <li class="nav-item">
+                            <a class="nav-link text-nowrap" href="#">会社概要</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#about">ABOUT US</a>
+                            <a class="nav-link text-nowrap" href="#">サービス</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#meet-authors">SERVICES</a>
+                            <a class="nav-link text-nowrap" href="#">オフショアメリット</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#contact">CONTACT</a>
+                            <a class="nav-link text-nowrap" href="#">採用情報</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">BLOG</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img class="language-flag" src="img/lang/japan.png" alt="Japan flag">
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#"><img class="language-flag" src="img/lang/vietnam.png" alt="Vietnam flag"></a>
+                                <a class="dropdown-item" href="#"><img class="language-flag" src="img/lang/uk.png" alt="UK flag"></a>
+                            </div>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
+    <section id="overview-slider">
+        <!-- SLIDER WITH INDICATORS -->
+        <div id="main-slider" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li class="active" data-target="#main-slider" data-slide-to="0"></li>
+                <li data-target="#main-slider" data-slide-to="1"></li>
+                <li data-target="#main-slider" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item carousel-img-imperfect active">
+                    <div class="dark-layer">
+                        <div class="container">
+                            <div class="carousel-caption">
+                                <h1 class="text-left display-3-md-block">Imperfect human, perfect product</h1>
+                                <p class="lead d-none d-md-block mt-3">ルビナの掲げる理念『Imperfect human, perfect product』は、個々人の能力に依存するのではなく、ソフトウェア開発のプロセスを重視することで製品の品質を向上させることにあります。</p>
+                                <button class="btn btn-danger btn-lg mt-3">会社コンセプト</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item carousel-img-service">
+                    <div class="dark-layer">
+                        <div class="container">
+                            <div class="carousel-caption">
+                                <h1 class="display-3-md-block">日本企業向けの様々なサービス</h1>
+                                <p class="lead d-none d-md-block mt-3">ルビナではソフトウェア開発を行うにあたり、日本企業のお客様と継続的かつ円滑にビジネスを行うための様々な方式を用意しております。</p>
+                                <button class="btn btn-primary btn-lg mt-3">サービス詳細</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item carousel-img-talent">
+                    <div class="container">
+                        <div class="dark-layer">
+                            <div class="carousel-caption">
+                                <h1 class="display-3-md-block">新入社員育成</h1>
+                                <p class="lead d-none d-md-block mt-3">子供を大人に変換し、大学と会社のギャップを埋めるためのルビナアカデミーを、年2回実施しております。</p>
+                                <button class="btn btn-danger btn-lg mt-3">ルビナアカデミー</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- CONTROLS -->
+            <a href="#main-slider" class="carousel-control-prev" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a href="#main-slider" class="carousel-control-next" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </section>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
