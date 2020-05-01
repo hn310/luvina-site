@@ -17,19 +17,21 @@
     color: #fc0a0a !important;
 }
 
-.dropdown-menu {
-    min-width: 3rem;
-    max-width: 5rem;
-}
-
 @media (max-width: 767.98px) {
-    .nav-item {
+
+    .nav-item,
+    .border-bottom-sm {
         border-bottom: 1px solid #dedede;
     }
 
     .nav-link:hover {
         color: #fc0a0a !important;
         border-bottom: none;
+    }
+
+    .dropdown-menu {
+        border: none;
+        padding: 0.5rem 1rem;
     }
 }
 
@@ -78,9 +80,16 @@
 
 @media (min-width: 768px) {
     .display-3-md-block {
-        font-size: 4.5rem;
+        font-size: 4rem;
         font-weight: 300;
         line-height: 1.2;
+    }
+}
+
+@media (min-width: 1200px) {
+    .display-3-md-block {
+        white-space: nowrap !important;
+        text-align: center !important;
     }
 }
 
@@ -89,4 +98,11 @@
     top: 50%;
     transform: translateY(-50%);
     bottom: initial;
+}
+
+#service-overview .fas {
+    color: #fc0a0a;
+    background: #fff;
+    padding: 5px;
+    border-radius: 5px;
 }
