@@ -1,3 +1,7 @@
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
 /*navbar css*/
 .navbar-light .navbar-nav .nav-link {
     padding: 8px 16px;
@@ -84,11 +88,22 @@
         font-weight: 300;
         line-height: 1.2;
     }
+
+    .text-md-nowrap {
+        white-space: nowrap !important;
+    }
+
+    .text-md-center {
+        text-align: center !important;
+    }
 }
 
 @media (min-width: 1200px) {
-    .display-3-md-block {
+    .text-lg-nowrap {
         white-space: nowrap !important;
+    }
+
+    .text-lg-center {
         text-align: center !important;
     }
 }
@@ -105,4 +120,67 @@
     background: #fff;
     padding: 5px;
     border-radius: 5px;
+}
+
+/*pr-video*/
+.pr-img-bg {
+    background-image: url("../img/pr-video-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 11rem;
+    position: relative;
+}
+
+.video-btn {
+    color: #fff;
+}
+
+.video-btn:hover {
+    color: #fc0a0a;
+}
+
+/*contact us*/
+.bg-pink-light {
+    background-color: #ffe8e8 !important;
+}
+
+.office-img {
+    background-image: url("../img/office/office-hn.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    min-height: 25rem;
+    border-radius: 0.2rem !important;
+}
+
+@media (max-width: 360px) {
+    .office-img {
+        min-height: 30rem;
+    }
+
+    #contact h1 {
+        font-size: 2rem;
+    }
+}
+
+#contact .dark-layer {
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 0.2rem !important;
+}
+
+#contact .form-control:focus {
+    border-color: #fa9f9f;
+    box-shadow: 0 0 0 0.2rem rgba(255, 69, 69, 0.25);
+}
+
+.location-details .fas {
+    color: #fff;
+}
+
+.location-details a {
+    color: #00ad5f;
+    font-size: 0.9rem;
 }

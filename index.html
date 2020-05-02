@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <!-- font-awesome -->
     <script src="https://kit.fontawesome.com/73de181d20.js" crossorigin="anonymous"></script>
@@ -61,7 +62,7 @@
                     <div class="dark-layer">
                         <div class="container">
                             <div class="carousel-caption">
-                                <h1 class="text-left font-weight-normal display-3-md-block">Imperfect human, perfect product</h1>
+                                <h2 class="text-left font-weight-normal display-3-md-block text-lg-nowrap text-lg-center">Imperfect human, perfect product</h2>
                                 <p class="lead d-none d-md-block mt-3">個々人の能力に依存するのではなく、ソフトウェア開発のプロセスを重視することで製品の品質を向上させることにあります。</p>
                                 <button class="btn btn-danger btn-lg mt-3">会社コンセプト</button>
                             </div>
@@ -72,11 +73,11 @@
                     <div class="dark-layer">
                         <div class="container">
                             <div class="carousel-caption">
-                                <h1 class="display-3-md-block">日本企業向けの様々なサービス</h1>
+                                <h2 class="display-3-md-block text-md-nowrap text-md-center">日本向けサービス</h2>
                                 <div class="d-none d-md-block">
                                     <div class="row">
                                         <div class="col-md-7 text-left">
-                                            <p class="lead mt-3">ルビナではソフトウェア開発を行うにあたり、日本企業のお客様と継続的かつ円滑にビジネスを行うための様々な方式を用意しております。</p>
+                                            <p class="lead mx-3">ソフトウェア開発を行うにあたり、日本企業のお客様と継続的かつ円滑にビジネスを行うための様々な方式を用意しております。</p>
                                         </div>
                                         <div class="col-md-5">
                                             <div class="d-flex pt-3">
@@ -107,7 +108,7 @@
                                     </div>
                                 </div>
                                 <div class="text-md-left">
-                                    <button class="btn btn-primary btn-lg mt-lg-3">サービス詳細</button>
+                                    <button class="btn btn-primary btn-lg mt-3">サービス詳細</button>
                                 </div>
                             </div>
                         </div>
@@ -117,7 +118,7 @@
                     <div class="container">
                         <div class="dark-layer">
                             <div class="carousel-caption">
-                                <h1 class="display-3-md-block">新入社員育成</h1>
+                                <h2 class="display-3-md-block">新卒学生育成</h2>
                                 <p class="lead d-none d-md-block mt-3">子供を大人に変換し、大学と会社のギャップを埋めるためのルビナアカデミーを、年2回実施しております。</p>
                                 <button class="btn btn-danger btn-lg mt-3">ルビナアカデミー</button>
                             </div>
@@ -132,6 +133,183 @@
             <a href="#main-slider" class="carousel-control-next" data-slide="next">
                 <span class="carousel-control-next-icon"></span>
             </a>
+        </div>
+    </section>
+    <section id="key-points" class="my-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="text-center mt-3">
+                        <i class="fas fa-handshake fa-3x"></i>
+                        <h4 class="font-weight-bold my-2">日本市場特化</h4>
+                        <p>創業以来、<span id="company-year"></span>年間にわたって100％日本の顧客を特化しております</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="text-center mt-3">
+                        <i class="fas fa-language fa-3x"></i>
+                        <h4 class="font-weight-bold my-2">日本語可</h4>
+                        <p>社員500名のうち187名は日本語対応可能です（日本語可率：40%）</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="text-center mt-3">
+                        <i class="fas fa-laptop-code fa-3x"></i>
+                        <h4 class="font-weight-bold my-2">幅広い経験</h4>
+                        <p>10以上のプログラミング言語、かつ15以上の業務分野は対応可能です</p>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="company-pr-video" class="my-5">
+        <div class="pr-img-bg">
+            <div class="dark-layer text-center">
+                <div class="text-white">
+                    <a href="#" class="video-btn" data-src="https://www.youtube.com/embed/kvkFBls00c4" data-toggle="modal" data-target="#videoModal">
+                        <i class="pt-5 fab fa-youtube fa-3x" aria-hidden="true"></i>
+                    </a>
+                    <h2 class="mt-2">会社の特長をもっと見る</h2>
+                </div>
+            </div>
+        </div>
+        <!-- Video Modal -->
+        <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <i class="fas fa-window-close"></i>
+                        </button>
+                        <!-- 16:9 aspect ratio -->
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="" id="video" allowscriptaccess="always" allow="autoplay"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="news" class="pb-5">
+        <div class="text-center pb-3">
+            <h1 class="display-4">最新情報</h1>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-3">
+                    <div class="card h-100">
+                        <img src="img/news/vn-it-day.jpg" alt="" class="card-img-top">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title font-weight-bold">ベトナムIT DAY 2020への参加</h5>
+                            <p class="card-text">2020年2月に東京で開催されたベトナムIT Day 2020 に参加いたしました。</p>
+                            <a href="#" class="btn btn-primary mt-auto">もっと見る</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-3">
+                    <div class="card h-100">
+                        <img src="img/news/academy-23-end.jpg" alt="" class="card-img-top">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title font-weight-bold">ルビナアカデミー 第23期コースの修了式</h5>
+                            <p class="card-text">2020年1月にルビナアカデミー の第23期コースの修了式を行いました。</p>
+                            <a href="#" class="btn btn-primary mt-auto">もっと見る</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-3">
+                    <div class="card h-100">
+                        <img src="img/news/year-end-party.jpg" alt="" class="card-img-top">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title font-weight-bold">2019年忘年会</h5>
+                            <p class="card-text">2020年1月に忘年会を行いました。</p>
+                            <a href="#" class="btn btn-primary mt-auto">もっと見る</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-3">
+                    <div class="card h-100">
+                        <img src="img/news/christmas.jpg" alt="" class="card-img-top">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title font-weight-bold">クリスマスイベント</h5>
+                            <p class="card-text">2019年12月にクリスマスイベントが行われました。社内でクリスマス気分を味わえました。</p>
+                            <a href="#" class="btn btn-primary mt-auto">もっと見る</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="bg-pink-light">
+            <div class="container">
+                <div class="row no-gutters">
+                    <div class="col-md-6 col-lg-8 rounded">
+                        <div class="card p-4">
+                            <div class="card-body">
+                                <h1 class="text-center">お問い合わせ</h1>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="姓">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="名">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Eメール">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="電話番号">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <textarea class="form-control" placeholder="お問い合わせ内容"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <input type="submit" value="送信" class="btn btn-outline-danger btn-block">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 order-md-first">
+                        <div class="office-img h-100">
+                            <div class="dark-layer">
+                                <div id="location-hanoi" class="text-white py-5 px-3">
+                                    <h4><i class="fas fa-map-marker-alt px-3"></i>ベトナム本社</h4>
+                                    <div class="location-details px-5">
+                                        <span class="d-block"><i class="fas fa-female p-2"></i>ブイ・ティ・ビック・クエン</span>
+                                        <a href="#" class="d-block"><i class="fas fa-envelope p-2"></i>btbquyen@luvina.net</a>
+                                        <a href="#" class="d-block"><i class="fas fa-phone p-2"></i>(84) (24) 3793 1104</a>
+                                    </div>
+                                </div>
+                                <div id="location-japan" class="text-white p-3">
+                                    <h4><i class="fas fa-map-marker-alt px-3"></i>日本法人</h4>
+                                    <div class="location-details px-5">
+                                        <span class="d-block"><i class="fas fa-male p-2"></i>横浜　和敏</span>
+                                        <a href="#" class="d-block"><i class="fas fa-envelope p-2"></i>yokohama@luvina.jp</a>
+                                        <a href="#" class="d-block"><i class="fas fa-phone p-2"></i>(81) (44) 271 7080</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
