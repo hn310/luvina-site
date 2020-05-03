@@ -84,27 +84,13 @@ body {
 
 @media (min-width: 768px) {
     .display-3-md-block {
-        font-size: 4rem;
+        font-size: 3.5rem;
         font-weight: 300;
         line-height: 1.2;
     }
 
     .text-md-nowrap {
         white-space: nowrap !important;
-    }
-
-    .text-md-center {
-        text-align: center !important;
-    }
-}
-
-@media (min-width: 1200px) {
-    .text-lg-nowrap {
-        white-space: nowrap !important;
-    }
-
-    .text-lg-center {
-        text-align: center !important;
     }
 }
 
@@ -141,6 +127,12 @@ body {
     color: #fc0a0a;
 }
 
+/*news*/
+.flex-hr {
+    margin-left: 0;
+    margin-right: 0;
+}
+
 /*contact us*/
 .bg-gray-light {
     background-color: #f2f2f2 !important;
@@ -174,10 +166,6 @@ body {
 }
 
 @media (max-width: 380px) {
-    .office-img {
-        min-height: 26rem;
-    }
-
     #contact h1 {
         font-size: 2rem;
     }
@@ -213,8 +201,8 @@ footer .fas {
 /*back to top button*/
 #button-top {
     background-color: #dc3545;
-    width: 5rem;
-    height: 4rem;
+    width: 3rem;
+    height: 3rem;
     text-align: center !important;
     border-radius: 4px;
     position: fixed;
@@ -231,6 +219,6 @@ footer .fas {
 }
 
 #button-top.show {
-    opacity: 1;
+    opacity: 0.8;
     visibility: visible;
 }
