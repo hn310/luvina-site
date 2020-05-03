@@ -142,8 +142,8 @@ body {
 }
 
 /*contact us*/
-.bg-pink-light {
-    background-color: #ffe8e8 !important;
+.bg-gray-light {
+    background-color: #f2f2f2 !important;
 }
 
 .office-img {
@@ -153,22 +153,10 @@ body {
     background-position: center center;
     position: relative;
     min-height: 25rem;
-    border-radius: 0.2rem !important;
-}
-
-@media (max-width: 360px) {
-    .office-img {
-        min-height: 30rem;
-    }
-
-    #contact h1 {
-        font-size: 2rem;
-    }
 }
 
 #contact .dark-layer {
     background: rgba(0, 0, 0, 0.8);
-    border-radius: 0.2rem !important;
 }
 
 #contact .form-control:focus {
@@ -183,4 +171,62 @@ body {
 .location-details a {
     color: #00ad5f;
     font-size: 0.9rem;
+}
+
+@media (max-width: 380px) {
+    .office-img {
+        min-height: 26rem;
+    }
+
+    #contact h1 {
+        font-size: 2rem;
+    }
+
+    .location-details a {
+        font-size: 0.8rem;
+    }
+}
+
+/*footer*/
+footer a {
+    display: block !important;
+    text-decoration: none;
+    color: #6c757d !important;
+    padding-top: 0.3rem;
+    font-size: 80%;
+}
+
+footer #mobile-sitemap {
+    text-decoration: underline;
+    font-size: 100%;
+    color: #007bff !important;
+}
+
+footer .fas {
+    color: #000 !important;
+}
+
+/*back to top button*/
+#button-top {
+    background-color: #dc3545;
+    width: 5rem;
+    height: 4rem;
+    text-align: center !important;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+}
+
+#button-top:hover {
+    cursor: pointer;
+}
+
+#button-top.show {
+    opacity: 1;
+    visibility: visible;
 }

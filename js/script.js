@@ -1,5 +1,5 @@
 $('#main-slider').carousel({
-    interval: 113000,
+    interval: 3000,
     keyboard: true,
     pause: 'hover',
     wrap: true
@@ -34,3 +34,23 @@ $(document).ready(function() {
     })
     // document ready  
 });
+
+// footer: set current year
+$("#current-year").text(new Date().getFullYear());
+
+// back to top button
+var btn = $('#button-top');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});
+
