@@ -189,11 +189,15 @@ body {
 
 /*footer*/
 footer a {
-    display: block !important;
+    display: block;
     text-decoration: none;
-    color: #6c757d !important;
+    color: #6c757d;
     padding-top: 0.3rem;
     font-size: 80%;
+}
+
+footer a:hover {
+    color: #007bff;
 }
 
 footer #mobile-sitemap {
@@ -215,7 +219,7 @@ footer .fas {
     border-radius: 4px;
     position: fixed;
     bottom: 30px;
-    right: 30px;
+    right: 10px;
     transition: background-color .3s, opacity .5s, visibility .5s;
     opacity: 0;
     visibility: hidden;
