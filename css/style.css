@@ -1,3 +1,4 @@
+/**************************COMMON CSS**************************/
 body {
     font-family: 'Noto Sans JP', sans-serif;
 }
@@ -8,7 +9,7 @@ body {
     color: #000;
 }
 
-.nav-link:hover {
+li:not(.active)>.nav-link:hover {
     color: #fc0a0a !important;
     border-bottom: 3px solid #fc0a0a;
 }
@@ -39,7 +40,55 @@ body {
     }
 }
 
+/*footer*/
+footer a {
+    display: block;
+    text-decoration: none;
+    color: #6c757d;
+    padding-top: 0.3rem;
+    font-size: 80%;
+}
 
+footer a:hover {
+    color: #007bff;
+}
+
+footer #mobile-sitemap {
+    text-decoration: underline;
+    font-size: 100%;
+    color: #007bff !important;
+}
+
+footer .fas {
+    color: #000 !important;
+}
+
+/*back to top button*/
+#button-top {
+    background-color: #dc3545;
+    width: 3rem;
+    height: 3rem;
+    text-align: center !important;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 10px;
+    transition: background-color .3s, opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+}
+
+#button-top:hover {
+    cursor: pointer;
+}
+
+#button-top.show {
+    opacity: 0.8;
+    visibility: visible;
+}
+
+/**************************index.html CSS**************************/
 /*slider*/
 .carousel-img-imperfect {
     background-image: url("../img/imperfect.jpg");
@@ -175,50 +224,17 @@ body {
     }
 }
 
-/*footer*/
-footer a {
-    display: block;
-    text-decoration: none;
-    color: #6c757d;
-    padding-top: 0.3rem;
-    font-size: 80%;
+/**************************about.html CSS**************************/
+#about-img {
+    background-image: url("../img/office/ksp.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 16rem;
+    position: relative;
 }
 
-footer a:hover {
-    color: #007bff;
-}
-
-footer #mobile-sitemap {
-    text-decoration: underline;
-    font-size: 100%;
-    color: #007bff !important;
-}
-
-footer .fas {
-    color: #000 !important;
-}
-
-/*back to top button*/
-#button-top {
-    background-color: #dc3545;
-    width: 3rem;
-    height: 3rem;
-    text-align: center !important;
-    border-radius: 4px;
-    position: fixed;
-    bottom: 30px;
-    right: 10px;
-    transition: background-color .3s, opacity .5s, visibility .5s;
-    opacity: 0;
-    visibility: hidden;
-    z-index: 1000;
-}
-
-#button-top:hover {
-    cursor: pointer;
-}
-
-#button-top.show {
-    opacity: 0.8;
-    visibility: visible;
+@media (min-width: 768px) {
+    #collapse-header .category-text {
+        font-size: 1.5rem;
+    }
 }
