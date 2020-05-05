@@ -21,7 +21,6 @@ $(document).ready(function() {
     $('.video-btn').click(function() {
         $videoSrc = $(this).data("src");
     });
-    console.log($videoSrc);
     // when the modal is opened autoplay it  
     $('#videoModal').on('shown.bs.modal', function(e) {
         // set the video src to autoplay and not to show related video. Youtube related video is like a box of chocolates... you never know what you're gonna get
@@ -42,15 +41,21 @@ $("#current-year").text(new Date().getFullYear());
 var btn = $('#button-top');
 
 $(window).scroll(function() {
-  if ($(window).scrollTop() > 300) {
-    btn.addClass('show');
-  } else {
-    btn.removeClass('show');
-  }
+    if ($(window).scrollTop() > 300) {
+        btn.addClass('show');
+    } else {
+        btn.removeClass('show');
+    }
 });
 
 btn.on('click', function(e) {
-  e.preventDefault();
-  $('html, body').animate({scrollTop:0}, '300');
+    e.preventDefault();
+    $('html, body').animate({ scrollTop: 0 }, '300');
 });
 
+$('.show-section').click(function() {
+    $('.collapse').collapse('hide');
+    // add "active" class to current link
+    $('.show-section').removeClass("active");
+    $(this).addClass("active");
+});

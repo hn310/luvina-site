@@ -9,9 +9,10 @@ body {
     color: #000;
 }
 
-li:not(.active)>.nav-link:hover {
+/*not display border bottom on active menu & language select menu*/
+li:not(.active):not(:last-child)>.nav-link:hover {
     color: #fc0a0a !important;
-    border-bottom: 3px solid #fc0a0a;
+    border-bottom: 2px solid #fc0a0a;
 }
 
 .nav-item.active {
@@ -237,4 +238,52 @@ footer .fas {
     #collapse-header .category-text {
         font-size: 1.5rem;
     }
+}
+
+/*section-header*/
+.show-section {
+    cursor: pointer;
+    border-bottom: 2px solid #dc3545;
+    border-radius: 1rem 3rem;
+    padding: 1rem 0;
+}
+
+.show-section.active {
+    background: #dc3545;
+    color: #fff !important;
+}
+
+/*section-details*/
+#company-overview .card-body {
+    padding: 0;
+    padding-top: 1rem;
+}
+
+#company-overview .table th {
+    background-color: #f2f2f2;
+    width: 20%;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 767.98px) {
+    #company-overview .table th {
+        width: 30%;
+    }
+}
+
+#company-overview a[aria-expanded=true] .fa-caret-down {
+    display: none;
+}
+
+#company-overview a[aria-expanded=false] .fa-caret-up {
+    display: none;
+}
+
+#company-overview .company-detail-header {
+    font-size: 1.3rem;
+}
+
+#company-overview .card-header {
+    background: #dc3545;
+    color: #fff;
 }
