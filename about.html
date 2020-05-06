@@ -62,19 +62,19 @@
             </div>
             <div class="row no-gutters">
                 <div class="col-4 text-center">
-                    <a class="show-section active d-block" data-toggle="collapse" data-target="#company-overview">
+                    <a class="show-section active d-block" data-toggle="collapse" data-target="#company-overview" id="show-company-overview">
                         <i class="fas fa-city fa-2x px-2"></i>
                         <div class="d-md-inline category-text">会社概要</div>
                     </a>
                 </div>
                 <div class="col-4 text-center">
-                    <a class="show-section d-block" data-toggle="collapse" data-target="#company-history">
+                    <a class="show-section d-block" data-toggle="collapse" data-target="#company-history" id="show-company-history">
                         <i class="fas fa-history fa-2x px-2"></i>
                         <div class="d-md-inline category-text">沿革</div>
                     </a>
                 </div>
                 <div class="col-4 text-center">
-                    <a class="show-section d-block" data-toggle="collapse" data-target="#company-location">
+                    <a class="show-section d-block" data-toggle="collapse" data-target="#company-location" id="show-company-location">
                         <i class="fas fa-map-marked-alt fa-2x px-2"></i>
                         <div class="d-md-inline category-text">事業所</div>
                     </a>
@@ -86,14 +86,14 @@
         <div class="container">
             <div class="accordion" id="company-branches">
                 <div class="card">
-                    <div class="card-header" id="main-company">
-                        <a class="d-block company-detail-header" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <div class="card-header" id="main-company-overview">
+                        <a class="d-block company-detail-header" type="button" data-toggle="collapse" data-target="#company-overview-collapse-1" aria-expanded="true" aria-controls="company-overview-collapse-1">
                             <span class="pr-3">ベトナム本社</span>
                             <i class="fas fa-caret-down"></i>
                             <i class="fas fa-caret-up"></i>
                         </a>
                     </div>
-                    <div id="collapseOne" class="collapse show" aria-labelledby="main-company">
+                    <div id="company-overview-collapse-1" class="collapse show" aria-labelledby="main-company-overview">
                         <div class="card-body">
                             <table class="table">
                                 <tbody>
@@ -238,14 +238,14 @@
                     </div>
                 </div>
                 <div class="card">
-                    <div class="card-header" id="japan-branch">
-                        <a class="d-block company-detail-header" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <div class="card-header" id="japan-branch-overview">
+                        <a class="d-block company-detail-header" type="button" data-toggle="collapse" data-target="#company-overview-collapse-2" aria-expanded="false" aria-controls="company-overview-collapse-2">
                             <span class="pr-3">日本法人</span>
                             <i class="fas fa-caret-down"></i>
                             <i class="fas fa-caret-up"></i>
                         </a>
                     </div>
-                    <div id="collapseTwo" class="collapse" aria-labelledby="japan-branch">
+                    <div id="company-overview-collapse-2" class="collapse" aria-labelledby="japan-branch-overview">
                         <div class="card-body">
                             <table class="table">
                                 <tbody>
@@ -304,14 +304,14 @@
                     </div>
                 </div>
                 <div class="card">
-                    <div class="card-header" id="danang-branch">
-                        <a class="d-block company-detail-header" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <div class="card-header" id="danang-branch-overview">
+                        <a class="d-block company-detail-header" type="button" data-toggle="collapse" data-target="#company-overview-collapse-3" aria-expanded="false" aria-controls="company-overview-collapse-3">
                             <span class="pr-3">ダナン事務所</span>
                             <i class="fas fa-caret-down"></i>
                             <i class="fas fa-caret-up"></i>
                         </a>
                     </div>
-                    <div id="collapseThree" class="collapse" aria-labelledby="danang-branch">
+                    <div id="company-overview-collapse-3" class="collapse" aria-labelledby="danang-branch-overview">
                         <div class="card-body">
                             <table class="table">
                                 <tbody>
@@ -369,10 +369,147 @@
         </div>
     </section>
     <section id="company-history" class="collapse">
-        <h1>history</h1>
+        <div class="container">
+            <div class="mt-5">
+                <div class="h1 text-danger text-center">2007</div>
+                <table class="table text-left">
+                    <tbody>
+                        <tr>
+                            <th scope="row">8月</th>
+                            <td>Luvina Software Joint Stock Companyに会社名を変更</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="mt-5">
+                <div class="h1 text-danger text-center">2004</div>
+                <table class="table text-left">
+                    <tbody>
+                        <tr>
+                            <th scope="row">7月</th>
+                            <td>Luvina Software Company として会社設立</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="mt-5">
+                <div class="h1 text-danger text-center">2003</div>
+                <table class="table text-left">
+                    <tbody>
+                        <tr>
+                            <th scope="row">7月</th>
+                            <td>ソフトウエア開発グループとして活動開始</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </section>
-    <section id="company-location" class="collapse">
-        <h1>location</h1>
+    <section id="company-location" class="collapse mt-4">
+        <div class="container">
+            <div class="accordion" id="company-locations">
+                <div class="card">
+                    <div class="card-header" id="main-company-location">
+                        <a class="d-block company-detail-header" type="button" data-toggle="collapse" data-target="#company-location-collapse-1" aria-expanded="true" aria-controls="company-location-collapse-1">
+                            <span class="pr-3">ベトナム本社</span>
+                            <i class="fas fa-caret-down"></i>
+                            <i class="fas fa-caret-up"></i>
+                        </a>
+                    </div>
+                    <div id="company-location-collapse-1" class="collapse show" aria-labelledby="main-company-location">
+                        <div class="card-body">
+                            <div>
+                                <div class="h6 mb-2">
+                                    <i class="fas fa-map-marker-alt px-2"></i>
+                                    <span>4F Hoa Binh Tower, 106 Hoang Quoc Viet Str., Cau Giay Dist., Ha Noi, Viet Nam</span>
+                                </div>
+                                <div class="h6 mb-2">
+                                    <i class="fas fa-phone-volume px-2"></i>
+                                    <a href="#">(84) (24) 3793 1103</a>
+                                </div>
+                                <div class="h6 mb-4">
+                                    <i class="fas fa-fax px-2"></i>
+                                    <span>(84) (24) 3793 1106</span>
+                                </div>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.652991868507!2d105.79282611476363!3d21.046566285988664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab32fc233f49%3A0xc13f7e3167d5ba52!2sLuvina%20software%20Joinstock%20Company!5e0!3m2!1sen!2sjp!4v1588756335430!5m2!1sen!2sjp" allowfullscreen aria-hidden="false" tabindex="0"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="japan-branch-location">
+                        <a class="d-block company-detail-header" type="button" data-toggle="collapse" data-target="#company-location-collapse-2" aria-expanded="false" aria-controls="company-location-collapse-2">
+                            <span class="pr-3">日本法人</span>
+                            <i class="fas fa-caret-down"></i>
+                            <i class="fas fa-caret-up"></i>
+                        </a>
+                    </div>
+                    <div id="company-location-collapse-2" class="collapse show" aria-labelledby="japan-branch-location">
+                        <div class="card-body">
+                            <div>
+                                <div class="h6 mb-2">
+                                    <div><i class="fas fa-map-marker-alt px-2"></i>〒213-0012</div>
+                                    <div class="pl-4">神奈川県川崎市高津区坂戸3-2-1</div>
+                                    <div class="pl-4">かながわサイエンスパーク（KSP）西612号室</div>
+                                </div>
+                                <div class="h6 mb-2">
+                                    <div class="font-weight-bold pl-3"><i class="fas fa-exclamation-circle px-2"></i>電車をご利用の場合</div>
+                                    <div class="pl-5">
+                                        <div>最寄駅：東急田園都市線・大井町線　溝の口駅／JR南武線 武蔵溝ノ口駅</div>
+                                        <div>　・徒歩約15分</div>
+                                        <div>　・溝の口駅北口バスターミナル9番乗り場から、KSP行き無料シャトルバスにて約5分</div>
+                                        <div>　※平日の午前10時までは会員専用バスとして運行しますので、ご乗車には会員証が必要になります</div>
+                                    </div>
+                                </div>
+                                <div class="h6 mb-2">
+                                    <i class="fas fa-phone-volume px-2"></i>
+                                    <a href="#">(81) (44) 271 7080</a>
+                                </div>
+                                <div class="h6 mb-4">
+                                    <i class="fas fa-fax px-2"></i>
+                                    <span>(81) (44) 271 7081</span>
+                                </div>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3244.3710848815876!2d139.61850441510882!3d35.593911880214755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f432172049a3%3A0x332cd3b00aec8b50!2sKanagawa%20Science%20Park!5e0!3m2!1sen!2sjp!4v1588757153330!5m2!1sen!2sjp" allowfullscreen aria-hidden="false" tabindex="0"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="danang-branch-location">
+                        <a class="d-block company-detail-header" type="button" data-toggle="collapse" data-target="#company-location-collapse-3" aria-expanded="false" aria-controls="company-location-collapse-3">
+                            <span class="pr-3">ダナン事務所</span>
+                            <i class="fas fa-caret-down"></i>
+                            <i class="fas fa-caret-up"></i>
+                        </a>
+                    </div>
+                    <div id="company-location-collapse-3" class="collapse show" aria-labelledby="danang-branch-location">
+                        <div class="card-body">
+                            <div>
+                                <div class="h6 mb-2">
+                                    <i class="fas fa-map-marker-alt px-2"></i>
+                                    <span>18F, Da Nang Software Park (DSP), 02 Quang Trung Str., Hai Chau Dist., Da Nang, Viet Nam</span>
+                                </div>
+                                <div class="h6 mb-2">
+                                    <i class="fas fa-phone-volume px-2"></i>
+                                    <a href="#">(84) (236) 388 8718</a>
+                                </div>
+                                <div class="h6 mb-4">
+                                    <i class="fas fa-fax px-2"></i>
+                                    <span>(84) (236) 388 8721</span>
+                                </div>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3833.8069962965305!2d108.22002101468424!3d16.07550218887706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3142183a79dbf655%3A0x7d15e4eacbf3dfc5!2zQ8O0bmcgVHkgQ-G7lSBQaOG6p24gUGjhuqduIE3hu4FtIEx1dmluYQ!5e0!3m2!1sen!2sjp!4v1588757031699!5m2!1sen!2sjp" allowfullscreen aria-hidden="false" tabindex="0"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     <footer class="py-4">
         <div class="container">

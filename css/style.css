@@ -271,19 +271,33 @@ footer .fas {
     }
 }
 
-#company-overview a[aria-expanded=true] .fa-caret-down {
+#company-overview a[aria-expanded=true] .fa-caret-down,
+#company-location a[aria-expanded=true] .fa-caret-down {
     display: none;
 }
 
-#company-overview a[aria-expanded=false] .fa-caret-up {
+#company-overview a[aria-expanded=false] .fa-caret-up,
+#company-location a[aria-expanded=false] .fa-caret-up {
     display: none;
 }
 
-#company-overview .company-detail-header {
+#company-overview .company-detail-header,
+#company-location .company-detail-header {
     font-size: 1.3rem;
 }
 
-#company-overview .card-header {
+#company-overview .card-header,
+#company-location .card-header {
     background: #dc3545;
     color: #fff;
+}
+
+/*company history css*/
+#company-history .table th {
+    width: 20%;
+}
+
+#company-history .table th,
+#company-history .table td {
+    font-size: 1.2rem;
 }

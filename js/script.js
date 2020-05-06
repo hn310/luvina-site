@@ -35,7 +35,7 @@ $(document).ready(function() {
 });
 
 // footer: set current year
-$("#current-year").text(new Date().getFullYear());
+$('#current-year').text(new Date().getFullYear());
 
 // back to top button
 var btn = $('#button-top');
@@ -53,9 +53,25 @@ btn.on('click', function(e) {
     $('html, body').animate({ scrollTop: 0 }, '300');
 });
 
+//****************about.html js****************
+// switch tab
 $('.show-section').click(function() {
     $('.collapse').collapse('hide');
     // add "active" class to current link
-    $('.show-section').removeClass("active");
+    $('.show-section').removeClass("active"); // remove all
     $(this).addClass("active");
 });
+
+// when re-click 会社概要 tab, show first collapse (本社)
+$('#show-company-overview').click(showCompanyOverview);
+
+function showCompanyOverview() {
+    $('#company-overview-collapse-1').addClass('collapse show');
+}
+
+// when re-click 事務所 tab, show first collapse (本社)
+$('#show-company-location').click(showCompanyLocation);
+
+function showCompanyLocation() {
+    $('#company-location-collapse-1').addClass('collapse show');
+}
