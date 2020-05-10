@@ -301,3 +301,22 @@ footer .fas {
 #company-history .table td {
     font-size: 1.2rem;
 }
+
+/**************************concept.html CSS**************************/
+#concept-img {
+    background-image: url("../img/concept-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 16rem;
+    max-width: 100%;
+    position: relative;
+}
+
+#concept-img .dark-layer {
+    background: rgba(0, 0, 0, 0.4);
+}
+
+#luvina-way .go-global-img {
+    margin-top: -3rem;
+}
